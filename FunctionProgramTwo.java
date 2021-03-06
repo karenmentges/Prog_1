@@ -1,12 +1,15 @@
-/* Dado o código da classe abaixo, faça um programa que instancie um objeto Autor e leia do teclado os dados
-necessários para preencher todos os atributos do objeto instanciado. */
+/* Dado o código da classe abaixo, implemente o método carregaDoTeclado(), que, quando for chamado, faz a
+leitura do teclado de uma string e um inteiro cujos valores são colocados nos atributos do objeto executando o
+método */
 
 import java.util.Scanner; 
 
-public class ProgramOne {
-    public static void main(String args[]) {
+class FunctionProgramTwo {
+    String nome;
+    int id;
 
-        ClassProgramOne autor = new ClassProgramOne();;
+    void carregaDoTeclado(){
+        FunctionProgramTwo autor = new FunctionProgramTwo();
         
         Scanner scanner;
         scanner = new Scanner(System.in);
@@ -20,6 +23,9 @@ public class ProgramOne {
 
         System.out.println("Nome: " + autor.nome);
         System.out.println("ID: " + autor.id);
-   
+        
     }
+    
+        
 }
+
