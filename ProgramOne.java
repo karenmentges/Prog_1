@@ -3,7 +3,6 @@ necessários para preencher todos os atributos do objeto instanciado. */
 
 import java.util.Scanner; 
 
-
 public class ProgramOne {
     public static void main(String args[]) {
 
