@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ProgramOne {
     public static void main(String args[]) {
 
-        ClassProgramOne autor = new ClassProgramOne();;
+        ClassProgramOne autor = new ClassProgramOne();
         
         Scanner scanner;
         scanner = new Scanner(System.in);
