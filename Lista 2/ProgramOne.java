@@ -5,7 +5,6 @@ public class ProgramOne {
         String nomeProduto;
         float preço;
         int quantidade;
-        Compra produto = new Compra();
         
         Scanner scanner;
         scanner = new Scanner(System.in);
@@ -20,7 +19,7 @@ public class ProgramOne {
         System.out.println("Digite a quantidade do produto: ");
         quantidade = scanner.nextInt(); // scanf
 
-        produto = Compra(nomeProduto, preço, quantidade);
+        Compra(nomeProduto, preço, quantidade);
     }
     
 }
