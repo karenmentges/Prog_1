@@ -22,5 +22,5 @@ class Compra {
         System.out.println("Preço:" + preço);
         System.out.println("Quantidade:" + quantidade);
     }
-   }
+}
    
