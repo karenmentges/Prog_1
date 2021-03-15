@@ -16,6 +16,7 @@ public class ProgramThree {
         System.out.println("4 - Diminui Canal.");
         System.out.println("5 - Troca Canal.");
         System.out.println("6 - Retorna valor do Volume e do Canal.");
+        System.out.println("0 - Sair.");
         System.out.println();
 
         System.out.println("Digite o número da operação: ");
