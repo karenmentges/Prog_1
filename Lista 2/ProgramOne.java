@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class ProgramOne {
     public static void main(String args[]) {
         String nomeProduto;
-        float preço;
+        float preco;
         int quantidade;
         
         Scanner scanner;
@@ -14,12 +14,13 @@ public class ProgramOne {
         nomeProduto = scanner.nextLine(); //fgets
         
         System.out.println("Digite o preço do produto: ");
-        preço = scanner.nextInt(); // scanf
+        preco = scanner.nextInt(); // scanf
 
         System.out.println("Digite a quantidade do produto: ");
         quantidade = scanner.nextInt(); // scanf
 
-        Compra(nomeProduto, preço, quantidade);
+        Compra produto = new Compra(nomeProduto, preco, quantidade);
+        produto.imprimeResumo();
     }
     
 }
