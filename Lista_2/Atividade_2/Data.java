@@ -3,6 +3,8 @@ as seguintes operações: Uma pessoa deve possuir os seguintes atributos: nome, 
 (Data(dia, mes, ano)), altura, peso. Crie um método construtor para a classe Pessoa
 passando todos os atributos como parâmetro. */
 
+package Lista_2.Atividade_2;
+
 public class Data {
     int dia;
     int mes;

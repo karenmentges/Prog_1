@@ -4,6 +4,8 @@ escreva um programa em Java que instancie um objeto da classe Compra, leia do te
 informações necessárias para preencher todas as propriedades do objeto e, por último, imprima
 essas informações através do método imprimeResumo(). */
 
+package Lista_2.Atividade_1;
+
 import java.util.Scanner;
 
 public class ProgramOne {

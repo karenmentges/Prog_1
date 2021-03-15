@@ -3,35 +3,35 @@ package Lista_2.Atividade_3;
 public class ControleRemoto {
     Televisao tv = new Televisao();
 
-    void aumentaVolume() {
+    public void aumentaVolume() {
         int volume = tv.consultaVolume();
         volume++;
         tv.lerVolume(volume);
     }
 
-    void diminuiVolume() {
+    public void diminuiVolume() {
         int volume = tv.consultaVolume();
         volume--;
         tv.lerVolume(volume);
     }
 
-    void aumentaCanal() {
+    public void aumentaCanal() {
         int canal = tv.consultaCanal();
         canal++;
         tv.lerCanal(canal);
     }
 
-    void diminuiCanal() {
+    public void diminuiCanal() {
         int canal = tv.consultaCanal();
         canal--;
         tv.lerCanal(canal);
     }
 
-    void trocaCanal(int canal) {
+    public void trocaCanal(int canal) {
         tv.lerCanal(canal);
     }
 
-    void retornaVolumeCanal() {
+    public void retornaVolumeCanal() {
         System.out.println("Volume: " + tv.consultaVolume() + "Canal: " + tv.consultaCanal());
     }
 }
