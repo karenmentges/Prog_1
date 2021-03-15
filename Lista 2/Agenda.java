@@ -16,27 +16,39 @@ public class Agenda {
     }
 
     void removePessoa(String nome) {
-
+        for (int i = 0; i < 10; i++) {
+            if (nome.equals(vetor[i].nome)) {
+                vetor[i].nome = "NULL";
+                vetor[i].idade = 0;
+                vetor[i].altura = 0;
+            }
+        }
     }
 
     int buscaPessoa(String nome) {
-
-        return index;
+        for (int i = 0; i < 10; i++) {
+            if (nome.equals(vetor[i].nome)) {
+                return i;
+            }
+        }
     } // informa em que posição da agenda está a pessoa
 
     void imprimeAgenda() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Nome: " + vetor[i].nome);
+            System.out.println("Idade: " + vetor[i].idade);
+            System.out.println("Altura: " + vetor[i].altura);
+        }
 
     } // imprime os dados de todas as pessoas da agenda
 
-    void imprimePessoa(int index, Agenda vetor) {
+    void imprimePessoa(int index) {
         for (int i = 0; i < 10; i++) {
-            if (index.equals(vetor[i])) {
+            if (index == i) {
                 System.out.println("Nome: " + vetor[i].nome);
-                System.out.println("Nome: " + vetor[i].nome);
-                System.out.println("Nome: " + vetor[i].nome);
-
+                System.out.println("Idade: " + vetor[i].idade);
+                System.out.println("Altura: " + vetor[i].altura);
             }
         }
-
     } // imprime os dados da pessoa que está na posição “index” da agenda
 }

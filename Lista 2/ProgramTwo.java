@@ -58,7 +58,7 @@ public class ProgramTwo {
             System.out.println("Digite o nome: ");
             nome = scanner.nextLine(); // fgets
 
-            vetor.buscaPessoa(nome);
+            System.out.println("Index da pessoa buscada: " + vetor.buscaPessoa(nome));
         }
 
         case 4: {
