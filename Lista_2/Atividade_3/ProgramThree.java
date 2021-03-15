@@ -1,9 +1,11 @@
+package Lista_2.Atividade_3;
+
 import java.util.Scanner;
 
 public class ProgramThree {
     public static void main(String args[]) {
         int c, canal;
-        Televisao tv = new Televisao();
+        ControleRemoto cr = new ControleRemoto();
 
         Scanner scanner;
         scanner = new Scanner(System.in);
@@ -21,24 +23,24 @@ public class ProgramThree {
 
         switch (c) {
         case 1:
-            tv.aumentaVolume();
+            cr.aumentaVolume();
 
         case 2:
-            tv.diminuiVolume();
+            cr.diminuiVolume();
 
         case 3:
-            tv.aumentaCanal();
+            cr.aumentaCanal();
 
         case 4:
-            tv.diminuiCanal();
+            cr.diminuiCanal();
 
         case 5:
             System.out.println("Digite o canal para qual deseja trocar: ");
             canal = scanner.nextInt();
-            tv.trocaCanal(canal);
+            cr.trocaCanal(canal);
 
         case 6:
-            tv.retornaVolumeCanal();
+            cr.retornaVolumeCanal();
 
         }
     }
