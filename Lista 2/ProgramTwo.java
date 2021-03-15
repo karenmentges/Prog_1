@@ -10,6 +10,9 @@ public class ProgramTwo {
         Agenda[] vetor = new Agenda[] { new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda(),
                 new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda() };
         int i = 0, c;
+        String nome;
+        int idade, index;
+        float altura;
 
         Scanner scanner;
         scanner = new Scanner(System.in);
@@ -25,20 +28,50 @@ public class ProgramTwo {
         c = scanner.nextInt(); // scanf
 
         switch (c) {
-        case 1:
-            break;
+        case 1: {
+            scanner.nextLine();
+            System.out.println("Digite o nome: ");
+            nome = scanner.nextLine(); // fgets
 
-        case 2:
-            break;
+            System.out.println("Digite a idade: ");
+            idade = scanner.nextInt(); // scanf
 
-        case 3:
-            break;
+            System.out.println("Digite a altura: ");
+            altura = scanner.nextInt(); // scanf
 
-        case 4:
-            break;
+            vetor[i] = vetor.armazenaPessoa(nome, idade, altura);
+            i++;
 
-        case 5:
-            break;
+        }
+
+        case 2: {
+            scanner.nextLine();
+            System.out.println("Digite o nome: ");
+            nome = scanner.nextLine(); // fgets
+
+            vetor.removePessoa(nome);
+
+        }
+
+        case 3: {
+            scanner.nextLine();
+            System.out.println("Digite o nome: ");
+            nome = scanner.nextLine(); // fgets
+
+            vetor.buscaPessoa(nome);
+        }
+
+        case 4: {
+            vetor.imprimeAgenda();
+        }
+
+        case 5: {
+            System.out.println("Digite o index da pessoa: ");
+            index = scanner.nextInt(); // scanf
+
+            vetor.imprimePessoa(index, vetor);
+        }
+
         }
     }
 }

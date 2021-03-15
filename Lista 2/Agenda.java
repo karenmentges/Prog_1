@@ -28,7 +28,15 @@ public class Agenda {
 
     } // imprime os dados de todas as pessoas da agenda
 
-    void imprimePessoa(int index) {
+    void imprimePessoa(int index, Agenda vetor) {
+        for (int i = 0; i < 10; i++) {
+            if (index.equals(vetor[i])) {
+                System.out.println("Nome: " + vetor[i].nome);
+                System.out.println("Nome: " + vetor[i].nome);
+                System.out.println("Nome: " + vetor[i].nome);
+
+            }
+        }
 
     } // imprime os dados da pessoa que está na posição “index” da agenda
 }
