@@ -1,12 +1,27 @@
-/* Implemente uma classe Parser que contenha um método estático analize(). O método
-deve receber como parâmetro um vetor de Strings e retornar quantas vezes a palavra token ou
-qualquer outra palavra que inicie pela letra h aparece no vetor. */
-
-package Lista_2.Atividade_4;
+import java.util.Scanner;
 
 public class ProgramFour {
     public static void main(String args[]) {
+        
+        int n;
+        Parser parser = new Parser();
 
+        Scanner scanner;
+        scanner = new Scanner(System.in);
+
+        System.out.println("Digite o número de palavras:");
+        n = scanner.nextInt(); // scanf 
+        scanner.nextLine();
+
+        String vetor[] = new String[n];
+        
+        for(int i=0; i<n; i++){
+            System.out.println("Digite a palavra:");
+            vetor[i] = scanner.nextLine(); // fgets
+        }
+        
+        System.out.println("Número de palavras token, ou iniciando em h: " + parser.analize(vetor, n));
+        
         
     }
 }
