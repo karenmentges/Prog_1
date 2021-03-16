@@ -1,20 +1,17 @@
-/* Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar
-as seguintes operações: Uma pessoa deve possuir os seguintes atributos: nome, data de nascimento
-(Data(dia, mes, ano)), altura, peso. Crie um método construtor para a classe Pessoa
-passando todos os atributos como parâmetro. */
-
-package Lista_2.Atividade_2;
-
 import java.util.Scanner;
 
-public class ProgramTwo {
+public class Main {
     public static void main(String args[]) {
         Agenda[] vetor = new Agenda[] { new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda(),
                 new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda() };
-        int i = 0, c;
-        String nome;
+        Agenda v = new Agenda();
+        int i=0, c, com=-1, dia, mes, ano;
+        String nome = new String("NULL");
+        String nome1 = new String("NULL");
+        String nome2 = new String("NULL");
         int idade, index;
-        float altura;
+        float altura, peso;
+        
 
         Scanner scanner;
         scanner = new Scanner(System.in);
@@ -26,54 +23,76 @@ public class ProgramTwo {
         System.out.println("5 - Imprimir Pessoa.");
         System.out.println();
 
-        System.out.println("Digite o número da operação: ");
-        c = scanner.nextInt(); // scanf
-
-        switch (c) {
-        case 1: {
+        
+        for(int cont=0; cont<=100; cont++){
+            System.out.println("Digite o número da operação: ");
+            c = scanner.nextInt(); 
             scanner.nextLine();
-            System.out.println("Digite o nome: ");
-            nome = scanner.nextLine(); // fgets
 
-            System.out.println("Digite a idade: ");
-            idade = scanner.nextInt(); // scanf
+            if(c==0){
+              break;
+            }
 
-            System.out.println("Digite a altura: ");
-            altura = scanner.nextInt(); // scanf
+            switch (c) {
+            case 1: 
+                System.out.println("Digite o nome: ");
+                nome = scanner.nextLine(); 
 
-            vetor[i] = vetor.armazenaPessoa(nome, idade, altura);
-            i++;
+                System.out.println("Digite o dia de nascimento: ");
+                dia = scanner.nextInt(); 
 
+                System.out.println("Digite o mês de nascimento: ");
+                mes = scanner.nextInt();
+
+                System.out.println("Digite o ano de nascimento: ");
+                ano = scanner.nextInt();
+
+                System.out.println("Digite a idade: ");
+                idade = scanner.nextInt(); 
+
+                System.out.println("Digite a altura: ");
+                altura = scanner.nextInt(); 
+
+                System.out.println("Digite o peso: ");
+                peso = scanner.nextInt(); 
+
+                Data data = new Data(dia, mes, ano);
+                Pessoa pessoa = new Pessoa(nome, data, idade, altura, peso);
+                vetor[i].pessoa = v.armazenaPessoa(pessoa);
+                i++;
+                break;
+
+            case 2: 
+                System.out.println("Digite o nome: ");
+                nome1 = scanner.nextLine(); 
+                v.removePessoa(nome1, vetor);
+                break;
+        
+
+            case 3:
+                com = -1;
+                System.out.println("Digite o nome: ");
+                nome2 = scanner.nextLine(); 
+                com = v.buscaPessoa(nome2, vetor);
+                if(com==-1){
+                    System.out.println("Não foi encontrado uma pessoa com o nome buscado.");
+                }
+                else{
+                    System.out.println("Index da pessoa buscada: " + com);
+                }
+                break;        
+
+            case 4: 
+                v.imprimeAgenda(vetor);
+                break;        
+
+            case 5: 
+                System.out.println("Digite o index da pessoa: ");
+                index = scanner.nextInt(); 
+                v.imprimePessoa(index, vetor);
+                break;
+      
         }
-
-        case 2: {
-            scanner.nextLine();
-            System.out.println("Digite o nome: ");
-            nome = scanner.nextLine(); // fgets
-
-            vetor.removePessoa(nome);
-
-        }
-
-        case 3: {
-            scanner.nextLine();
-            System.out.println("Digite o nome: ");
-            nome = scanner.nextLine(); // fgets
-
-            System.out.println("Index da pessoa buscada: " + vetor.buscaPessoa(nome));
-        }
-
-        case 4: {
-            vetor.imprimeAgenda();
-        }
-
-        case 5: {
-            System.out.println("Digite o index da pessoa: ");
-            index = scanner.nextInt(); // scanf
-
-            vetor.imprimePessoa(index, vetor);
-        }
-
         }
     }
 }
