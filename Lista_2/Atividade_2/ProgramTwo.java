@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class ProgramTwo {
     public static void main(String args[]) {
         Agenda[] vetor = new Agenda[] { new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda(),
                 new Agenda(), new Agenda(), new Agenda(), new Agenda(), new Agenda() };

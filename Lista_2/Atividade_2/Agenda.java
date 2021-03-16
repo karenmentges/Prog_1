@@ -67,5 +67,5 @@ public class Agenda {
                 System.out.println("\tPeso: " + vetor[i].pessoa.peso);
             }
         }
-    } // imprime os dados da pessoa que está na posição “index” da agenda
+    } 
 }
