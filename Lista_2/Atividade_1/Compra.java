@@ -12,6 +12,6 @@ class Compra {
     public void imprimeResumo() {
         System.out.println("Produto: " + nomeProduto);
         System.out.println("Preço: " + preco);
-        System.out.println("Quantidade: " + quantidade);
+        System.out.println("Quantidade: " + quantidade); 
     }
 }
