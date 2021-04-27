@@ -19,7 +19,7 @@ public class Forca {
     }
 
     public double tamanho(){
-        return a*b;
+        return a/b;
     }
 
 }
