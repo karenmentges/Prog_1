@@ -1,8 +1,7 @@
 public class ProgramThree {
     
-    FlxSprite a = new FlxSprite("um");
+    public static void main(String args[]){
+        Character a = new Character("Oi", true, "player1.png", 20, 20);
+    }
     
-    a.setAlive(true);
-    a.loadGraphics("player1.png");
-    a.reset(20, 20);
 }

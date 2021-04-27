@@ -19,4 +19,10 @@ class FlxSprite extends FlxObject {
         this.x = x; 
         this.y = y;  
     }
+
+    void imprime(String j){
+        System.out.println(j + " " + this.graphic + " " + this.alive + " " + this.x + " " + this.y);
+    }
+
+
 }

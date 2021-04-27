@@ -5,6 +5,7 @@ public class Character extends FlxSprite {
         setAlive(b);
         loadGraphics(n);
         reset(x, y);
+        imprime(j);
     }
     
 }
