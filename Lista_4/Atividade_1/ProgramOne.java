@@ -2,6 +2,7 @@ public class ProgramOne {
 
     public static void main(String args[]){
         Inimigo[] inimigo = new Inimigo[5];
+        Inimigo ini = new Inimigo();
         Forca forca = new Forca();
         Posicao posicao = new Posicao();
         Services service = new Services();
@@ -21,6 +22,8 @@ public class ProgramOne {
         }
         
         service.imprime(inimigo);
+
+        ini.imprime(inimigo);
       
     }
    
