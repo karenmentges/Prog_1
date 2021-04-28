@@ -22,4 +22,8 @@ public class MainFather {
         return getLado() + " (" + x + "," + y + ") = " + area();
     }
 
+    public void escala(double e){
+        lado *= e;
+    }
+
 }
