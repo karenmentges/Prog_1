@@ -21,7 +21,7 @@ class Sprite {
     } 
     
     public void inverte(){
-        this.x = ­-this.scaleY;
+        // this.x = ­-this.scaleY; tem erro aqui
         System.out.println("x = " + getX());
     } 
     

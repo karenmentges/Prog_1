@@ -2,6 +2,11 @@ public class Posicao {
     private int x;
     private int y;
 
+    public Posicao(int x, int y){
+        setX(x);
+        setY(y);
+    }
+
     public int getX(){
         return this.x;
     }
@@ -17,5 +22,5 @@ public class Posicao {
     public void setY(int y){
         this.y = y;
     }
-    
+
 }

@@ -2,6 +2,12 @@ public class Basico {
     private int id;
     private String rotulos[];
 
+    public Basico(int id, String[] h){
+        setId(id);
+        setRotulos(h);
+        System.out.println("Id = " + getId() + "String = " + getRotulos());
+    }
+
     public int getId(){
         return this.id;
     }
