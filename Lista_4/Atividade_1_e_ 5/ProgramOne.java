@@ -24,6 +24,16 @@ public class ProgramOne {
         service.imprime(inimigo);
 
         ini.imprime(inimigo);
+
+
+        // Questão 5
+
+        InimigoVolatil inivol = new InimigoVolatil(posicao, forca);
+
+        inivol.setEnergia(x);
+        inivol.setVida(x);
+
+        System.out.println(inivol.getVida() + " "  + inivol.getEnergia());
       
     }
    
