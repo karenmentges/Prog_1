@@ -1,8 +1,8 @@
-public class Basico {
+public class MainBasico {
     private int id;
     private String rotulos[];
 
-    public Basico(int id, String[] h){
+    public MainBasico(int id, String[] h){
         setId(id);
         setRotulos(h);
         System.out.println("Id = " + getId());

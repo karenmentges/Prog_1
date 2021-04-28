@@ -1,8 +1,8 @@
-public class Entidade extends Basico {
+public class MainEntidade extends MainBasico {
     private int energia;
     private MainPosicao posicao;
 
-    public Entidade(int energia, int x, int y, int id, String[] h){
+    public MainEntidade(int energia, int x, int y, int id, String[] h){
         super(id, h);
         setEnergia(energia);
         posicao = new MainPosicao(x, y);

@@ -9,7 +9,6 @@ public class ProgramSeven {
         int id = 1;
     
         Jogador j = new Jogador(vida, energia, x, y, id, h);
-
     }
 
 }
