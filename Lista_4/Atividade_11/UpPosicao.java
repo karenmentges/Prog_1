@@ -2,6 +2,11 @@ public class UpPosicao {
     private int x;
     private int y;
 
+    public UpPosicao(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
     public int getX(){
         return this.x;
     }
