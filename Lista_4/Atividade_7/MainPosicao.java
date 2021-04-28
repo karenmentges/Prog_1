@@ -1,8 +1,8 @@
-public class Posicao {
+public class MainPosicao {
     private int x;
     private int y;
 
-    public Posicao(int x, int y){
+    public MainPosicao(int x, int y){
         setX(x);
         setY(y);
     }

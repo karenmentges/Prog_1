@@ -2,6 +2,10 @@ public class Posicao {
     private int x;
     private int y;
 
+    public Posicao(){
+        
+    }
+
     public int getX(){
         return this.x;
     }

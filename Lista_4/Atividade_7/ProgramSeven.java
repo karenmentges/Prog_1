@@ -1,7 +1,7 @@
 public class ProgramSeven {
 
     public static void main(String args[]){
-        String h[] = {"Nome"};
+        String h[] = {"Nome", "oi"};
         int vida = 80; 
         int energia = 100;
         int x = 20;
