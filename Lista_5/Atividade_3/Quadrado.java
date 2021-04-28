@@ -1,4 +1,4 @@
-public class Quadrado extends FormaGeo {
+public class Quadrado extends FormaGeo implements Rotacionavel, Desenhavel {
     public int lado;
 
     public Quadrado(int lado){
@@ -9,4 +9,15 @@ public class Quadrado extends FormaGeo {
     public double area(){
         return this.lado * this.lado;
     }
+
+    @Override
+    public void rotacionar(){
+        System.out.println("Rotacionando Quadrado");
+    }
+
+    @Override
+    public void desenhar(){
+        System.out.println("Desenhando Quadrado");
+    }
+    
 }

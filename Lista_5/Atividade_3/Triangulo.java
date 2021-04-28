@@ -1,4 +1,4 @@
-public class Triangulo extends FormaGeo {
+public class Triangulo extends FormaGeo implements Rotacionavel, Desenhavel {
     public int base;
     public int altura;
 
@@ -11,4 +11,15 @@ public class Triangulo extends FormaGeo {
     public double area(){
         return this.base * this.altura;
     }
+
+    @Override
+    public void rotacionar(){
+        System.out.println("Rotacionando Triangulo");
+    }
+
+    @Override
+    public void desenhar(){
+        System.out.println("Desenhando Triangulo");
+    }
+    
 }
